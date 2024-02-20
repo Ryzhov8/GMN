@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./img/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./img/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Guess My Number</title>
+  </head>
+  <body>
+    <div class="grid">
+      <header class="header">
+        <div class="container">
+          <h1 class="heading">Guess My Number!</h1>
+          <button type="button" class="btn">Start!</button>
+        </div>
+      </header>
+      <main class="main">
+        <section class="section--number">
+          <div class="container">
+            <p class="number">?</p>
+          </div>
+        </section>
+        <section class="section--play">
+          <div class="container">
+            <form class="form">
+              <label>Please input the number<br />(between 1 and 20)</label>
+              <input class="form__input" type="number" min="1" max="20" />
+              <button class="btn" type="submit">Check!</button>
+            </form>
+
+            <p class="hint">📉 Too low!</p>
+
+            <div class="stats">
+              <p class="score">
+                💯 Score: <span class="score__number">14</span>
+              </p>
+              <p class="highscore">
+                🏅 Highscore: <span class="highscore__number">14</span>
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
